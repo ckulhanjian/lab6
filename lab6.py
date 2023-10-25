@@ -9,17 +9,16 @@ def main():
         menu_option = int(input('\nPlease enter an option: '))
 
         if menu_option == 1:
-            password = input('Enter an 8-digit password: ')
-            new_password = encoder(password)
+            new_password = encoder()
             print('Your password has been encoded and stored!')
         if menu_option == 2:
-            print(f"Your encoded password is {new_password}, and the original password is{'place_holder'}.")
+            print(f"Your encoded password is {new_password}, and the original password is {'place_holder'}.")
         if menu_option == 3:
             break
 
-def encoder(password):
+def encoder():
+    password = input('Enter an 8-digit password: ')
     new_password = ""
-
     for i in password:
         new_password += str(int(i)+3)
 
