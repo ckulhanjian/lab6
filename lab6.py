@@ -5,5 +5,7 @@ def main():
     for i in password:
         new_password += int(i)+3
 
+    print(new_password)
+
 if __name__ == '__main__':
     main()
