@@ -24,4 +24,5 @@ def encoder():
 
     return new_password
 
-main()
+if __name__ == "__main__":
+    main()
