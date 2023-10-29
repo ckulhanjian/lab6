@@ -24,5 +24,11 @@ def encoder():
 
     return new_password
 
+def decoder(password):
+    decoded_password = ''
+    for i in range(0, len(password)):
+        decoded_password += str(int(i) - 3)
+    return decoded_password
+
 if __name__ == "__main__":
     main()
